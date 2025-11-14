@@ -170,8 +170,8 @@ async function initData() {
                 tipo: 'practica',
                 empresa: 'Servicio Médico Legal (SML)',
                 cargo: 'Práctica Profesional I',
-                fecha_inicio: new Date('2025-01-01'),
-                fecha_fin: null,
+                fecha_inicio: new Date('2024-12-01'),
+                fecha_fin: new Date('2025-02-28'),
                 descripcion: 'Práctica profesional en el Servicio Médico Legal, enfocada en desarrollo web, administración de bases de datos y gestión de infraestructura tecnológica.',
                 actividades: [
                     'Desarrollo y mantenimiento de páginas web internas',
@@ -283,10 +283,18 @@ async function initData() {
         const curriculum = {
             educacion: [
                 {
+                    institucion: 'Escuela de Contadores Auditores de Santiago',
+                    carrera: 'Contador Auditor',
+                    estado: 'Completado (1 año)',
+                    fecha_inicio: new Date('2021-03-01'),
+                    fecha_fin: new Date('2022-02-28'),
+                    logros: ['Estudios completados (1 año de carrera)']
+                },
+                {
                     institucion: 'Universidad Andrés Bello',
                     carrera: 'Ingeniería en Computación e Informática',
                     estado: 'Último semestre',
-                    fecha_inicio: new Date('2021-03-01'), // Ajustar según tu fecha de inicio real
+                    fecha_inicio: new Date('2022-03-01'),
                     fecha_fin: null,
                     logros: ['Cursando último semestre', 'Cuarto año de carrera']
                 }
@@ -295,8 +303,8 @@ async function initData() {
                 {
                     empresa: 'Servicio Médico Legal (SML)',
                     cargo: 'Práctica Profesional I',
-                    fecha_inicio: new Date('2025-01-01'),
-                    fecha_fin: null,
+                    fecha_inicio: new Date('2024-12-01'),
+                    fecha_fin: new Date('2025-02-28'),
                     descripcion: 'Práctica profesional en el Servicio Médico Legal',
                     logros: [
                         'Desarrollo y mantenimiento de páginas web internas',
@@ -308,8 +316,8 @@ async function initData() {
                 {
                     empresa: 'Papa John\'s / McDonald\'s',
                     cargo: 'Operativo de tienda',
-                    fecha_inicio: null,
-                    fecha_fin: null,
+                    fecha_inicio: new Date('2023-11-01'),
+                    fecha_fin: new Date('2024-01-31'),
                     descripcion: 'Trabajo en servicio al cliente y operaciones de tienda',
                     logros: [
                         'Atención en caja y servicio al cliente',
@@ -340,7 +348,7 @@ async function initData() {
 
 Me presento, mi nombre es Alvaro Ignacio Guevara Godoy, estudiante de cuarto año de Ingeniería en Computación e Informática en la Universidad Andrés Bello, actualmente cursando el último semestre de la carrera. Me encuentro en búsqueda de una práctica profesional que me permita aplicar los conocimientos adquiridos durante mi formación académica.
 
-Cuento con experiencia en desarrollo de páginas web, manejo de bases de datos y uso de máquinas virtuales. Actualmente realizo mi Práctica Profesional I en el Servicio Médico Legal (SML), donde he desarrollado habilidades en desarrollo y mantenimiento de páginas web internas, administración de bases de datos, y configuración de máquinas virtuales Linux.
+Cuento con experiencia en desarrollo de páginas web, manejo de bases de datos y uso de máquinas virtuales. Realicé mi Práctica Profesional I en el Servicio Médico Legal (SML), donde desarrollé habilidades en desarrollo y mantenimiento de páginas web internas, administración de bases de datos, y configuración de máquinas virtuales Linux.
 
 Me considero una persona responsable, adaptable y con gran interés por seguir aprendiendo nuevas tecnologías. Mis principales fortalezas incluyen:
 

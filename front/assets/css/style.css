@@ -1,24 +1,24 @@
-/* Reset y Variables CSS - Colores Exóticos */
+/* Reset y Variables CSS - Colores Pastel */
 :root {
-    --primary-color: #ff006e;
-    --primary-dark: #d9048e;
-    --secondary-color: #8338ec;
-    --accent-color: #3a86ff;
-    --accent-color-2: #ff006e;
-    --accent-color-3: #fb5607;
-    --accent-color-4: #ffbe0b;
-    --text-color: #1a1a2e;
-    --text-light: #5a5a7a;
+    --primary-color: #FFB896;
+    --primary-dark: #FF9B70;
+    --secondary-color: #B8B8B8;
+    --accent-color: #A8D5E2;
+    --accent-color-2: #FFB896;
+    --accent-color-3: #FFC9A8;
+    --accent-color-4: #B8E0ED;
+    --text-color: #4A4A4A;
+    --text-light: #7A7A7A;
     --bg-color: #ffffff;
-    --bg-light: #f8f9ff;
-    --bg-dark: #0d0d1a;
-    --border-color: #e0e0f0;
-    --shadow: 0 4px 6px -1px rgba(255, 0, 110, 0.2), 0 2px 4px -1px rgba(131, 56, 236, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(255, 0, 110, 0.3), 0 4px 6px -2px rgba(131, 56, 236, 0.2);
+    --bg-light: #F5F5F5;
+    --bg-dark: #E0E0E0;
+    --border-color: #D0D0D0;
+    --shadow: 0 4px 6px -1px rgba(184, 184, 184, 0.2), 0 2px 4px -1px rgba(168, 213, 226, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(184, 184, 184, 0.3), 0 4px 6px -2px rgba(168, 213, 226, 0.2);
     --transition: all 0.3s ease;
-    --gradient-1: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
-    --gradient-2: linear-gradient(135deg, #fb5607 0%, #ff006e 50%, #8338ec 100%);
-    --gradient-3: linear-gradient(135deg, #3a86ff 0%, #8338ec 50%, #ff006e 100%);
+    --gradient-1: linear-gradient(135deg, #B8B8B8 0%, #FFB896 50%, #A8D5E2 100%);
+    --gradient-2: linear-gradient(135deg, #FFC9A8 0%, #FFB896 50%, #B8B8B8 100%);
+    --gradient-3: linear-gradient(135deg, #A8D5E2 0%, #FFB896 50%, #B8B8B8 100%);
 }
 
 .btn-edit-inline {
@@ -39,7 +39,7 @@
 
 .btn-edit-inline:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 184, 150, 0.4);
 }
 
 /* Formularios de Edición */
@@ -79,7 +79,7 @@
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(255, 0, 110, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 184, 150, 0.1);
 }
 
 .form-group textarea {
@@ -186,7 +186,7 @@ body {
     height: 3px;
     background: var(--gradient-1);
     transition: var(--transition);
-    box-shadow: 0 2px 8px rgba(255, 0, 110, 0.5);
+    box-shadow: 0 2px 8px rgba(255, 184, 150, 0.5);
 }
 
 .nav-menu a:hover::after {
@@ -250,17 +250,17 @@ body {
 }
 
 .highlight {
-    color: #ffbe0b;
-    text-shadow: 2px 2px 8px rgba(255, 190, 11, 0.5), 0 0 20px rgba(255, 190, 11, 0.3);
+    color: #FFC9A8;
+    text-shadow: 2px 2px 8px rgba(255, 201, 168, 0.5), 0 0 20px rgba(255, 201, 168, 0.3);
     animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
     from {
-        text-shadow: 2px 2px 8px rgba(255, 190, 11, 0.5), 0 0 20px rgba(255, 190, 11, 0.3);
+        text-shadow: 2px 2px 8px rgba(255, 201, 168, 0.5), 0 0 20px rgba(255, 201, 168, 0.3);
     }
     to {
-        text-shadow: 2px 2px 12px rgba(255, 190, 11, 0.8), 0 0 30px rgba(255, 190, 11, 0.5);
+        text-shadow: 2px 2px 12px rgba(255, 201, 168, 0.8), 0 0 30px rgba(255, 201, 168, 0.5);
     }
 }
 
@@ -297,12 +297,12 @@ body {
     background: white;
     color: var(--primary-color);
     font-weight: 700;
-    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 184, 150, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 0, 110, 0.6);
+    box-shadow: 0 6px 20px rgba(255, 184, 150, 0.6);
     background: var(--accent-color-4);
     color: var(--primary-color);
 }
@@ -319,7 +319,7 @@ body {
     background: rgba(255, 255, 255, 0.2);
     color: white;
     border-color: var(--accent-color-4);
-    box-shadow: 0 4px 15px rgba(255, 190, 11, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 201, 168, 0.4);
 }
 
 .hero-social {
@@ -335,8 +335,8 @@ body {
 
 .hero-social a:hover {
     transform: translateY(-3px) scale(1.2);
-    color: #ffbe0b;
-    text-shadow: 0 0 10px rgba(255, 190, 11, 0.8);
+    color: #FFC9A8;
+    text-shadow: 0 0 10px rgba(255, 201, 168, 0.8);
 }
 
 .hero-contact-info {
@@ -390,7 +390,7 @@ section {
     height: 4px;
     background: var(--gradient-1);
     border-radius: 2px;
-    box-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+    box-shadow: 0 0 10px rgba(255, 184, 150, 0.5);
 }
 
 /* About Section */
@@ -469,7 +469,7 @@ section {
     align-items: center;
     gap: 0.75rem;
     padding: 1rem 1.5rem 0.5rem;
-    background: linear-gradient(135deg, rgba(255, 0, 110, 0.05), rgba(131, 56, 236, 0.05));
+    background: linear-gradient(135deg, rgba(255, 184, 150, 0.05), rgba(184, 184, 184, 0.05));
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -487,7 +487,7 @@ section {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 700;
-    box-shadow: 0 2px 10px rgba(255, 0, 110, 0.3);
+    box-shadow: 0 2px 10px rgba(255, 184, 150, 0.3);
 }
 
 .project-image {
@@ -575,12 +575,12 @@ section {
 }
 
 .project-link-github {
-    background: #24292e;
+    background: #B8B8B8;
     color: white;
 }
 
 .project-link-github:hover {
-    background: #2f363d;
+    background: #C8C8C8;
     color: white;
 }
 
@@ -588,7 +588,7 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    background: #24292e;
+    background: #B8B8B8;
     color: white;
     padding: 4px 10px;
     border-radius: 12px;
@@ -688,7 +688,7 @@ section {
 .project-results {
     margin: 1rem 0;
     padding: 0.75rem;
-    background: linear-gradient(90deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+    background: linear-gradient(90deg, rgba(255, 184, 150, 0.1), rgba(184, 184, 184, 0.1));
     border-left: 4px solid;
     border-image: var(--gradient-1) 1;
     border-radius: 4px;
@@ -859,7 +859,7 @@ section {
 .social-links a:hover {
     background: var(--gradient-1);
     transform: translateY(-3px) scale(1.1);
-    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.5);
+    box-shadow: 0 4px 15px rgba(255, 184, 150, 0.5);
 }
 
 /* Skills Section */
@@ -910,7 +910,7 @@ section {
     color: white;
     border-color: transparent;
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 184, 150, 0.4);
 }
 
 .skill-tag.soft-skill {
@@ -941,7 +941,7 @@ section {
     background: var(--gradient-1);
     color: white;
     transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 184, 150, 0.4);
 }
 
 .interest-item i {
@@ -1013,7 +1013,7 @@ section {
 .experience-learning {
     margin-top: 1rem;
     padding: 1rem;
-    background: linear-gradient(90deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+    background: linear-gradient(90deg, rgba(255, 184, 150, 0.1), rgba(184, 184, 184, 0.1));
     border-left: 4px solid;
     border-image: var(--gradient-1) 1;
     border-radius: 4px;
@@ -1052,7 +1052,7 @@ section {
     border-radius: 50%;
     color: white;
     font-size: 2rem;
-    box-shadow: 0 4px 20px rgba(255, 0, 110, 0.4);
+    box-shadow: 0 4px 20px rgba(255, 184, 150, 0.4);
     transition: var(--transition);
 }
 
@@ -1067,7 +1067,7 @@ section {
 
 .service-card:hover .service-icon {
     transform: rotate(360deg) scale(1.1);
-    box-shadow: 0 6px 30px rgba(255, 0, 110, 0.6);
+    box-shadow: 0 6px 30px rgba(255, 184, 150, 0.6);
 }
 
 .service-card:hover .service-emoji {
@@ -1177,7 +1177,7 @@ section {
 .cert-link:hover {
     gap: 0.75rem;
     filter: brightness(1.2);
-    text-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+    text-shadow: 0 0 10px rgba(255, 184, 150, 0.5);
 }
 
 /* Curriculum Section */
@@ -1211,7 +1211,7 @@ section {
 
 .cv-item:hover {
     padding-left: 2rem;
-    background: linear-gradient(90deg, rgba(255, 0, 110, 0.05), transparent);
+    background: linear-gradient(90deg, rgba(255, 184, 150, 0.05), transparent);
 }
 
 .cv-item h4 {
@@ -1252,7 +1252,7 @@ section {
 
 
 .cv-download-box {
-    background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+    background: linear-gradient(135deg, rgba(255, 184, 150, 0.1), rgba(184, 184, 184, 0.1));
     padding: 2rem;
     border-radius: 12px;
     border: 2px solid;
