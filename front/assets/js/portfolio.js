@@ -462,11 +462,7 @@ async function loadCurriculum() {
                     </div>
                 `;
             } else {
-                cvDownload.innerHTML = `
-                    <div class="cv-download-box">
-                        <p style="margin-bottom: 1rem; color: var(--text-light);">📄 Aún no hay CV disponible. Sube tu CV en PDF usando el formulario de arriba.</p>
-                    </div>
-                `;
+                cvDownload.innerHTML = '';
             }
         }
     } catch (error) {
