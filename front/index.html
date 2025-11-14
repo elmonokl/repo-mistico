@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" id="navBrand">Portafolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#certificaciones">Certificaciones</a></li>
+                <li><a href="#curriculum">CV</a></li>
+                <li><a href="#carta">Carta</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hola, soy <span class="highlight" id="heroName">Desarrollador</span>
+                    </h1>
+                    <p class="hero-subtitle" id="heroTitle">Desarrollador Full Stack</p>
+                    <p class="hero-description" id="heroDescription">
+                        Bienvenido a mi portafolio profesional
+                    </p>
+                    <div class="hero-contact-info" id="heroContactInfo">
+                        <!-- Se llena dinámicamente -->
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#curriculum" class="btn btn-primary">
+                            <i class="fas fa-file-pdf"></i> Ver CV
+                        </a>
+                        <a href="#proyectos" class="btn btn-secondary">
+                            <i class="fas fa-code"></i> Mis Proyectos
+                        </a>
+                    </div>
+                    <div class="hero-social" id="heroSocial">
+                        <!-- Se llena dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Perfil Profesional -->
+    <section id="perfil" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                Perfil Profesional
+                <button class="btn-edit-inline" onclick="editSection('personal')" id="editPersonalBtn" style="display: none;">
+                    <i class="fas fa-edit"></i> Editar
+                </button>
+            </h2>
+            <div class="about-content">
+                <div class="about-text" id="personalView">
+                    <h3 id="aboutName">Desarrollador</h3>
+                    <p class="about-description" id="aboutDescription">
+                        Información sobre mí
+                    </p>
+                    <div class="about-info" id="aboutInfo">
+                        <!-- Se llena dinámicamente -->
+                    </div>
+                    
+                    <!-- Habilidades Técnicas -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-code"></i> Habilidades Técnicas</h4>
+                        <div class="skills-grid" id="habilidadesTecnicas">
+                            <!-- Se llena dinámicamente -->
+                        </div>
+                    </div>
+                    
+                    <!-- Habilidades Blandas -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-users"></i> Habilidades Blandas</h4>
+                        <div class="skills-grid" id="habilidadesBlandas">
+                            <!-- Se llena dinámicamente -->
+                        </div>
+                    </div>
+                    
+                    <!-- Áreas de Interés -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-bullseye"></i> Áreas de Interés Profesional</h4>
+                        <div class="interests-grid" id="areasInteres">
+                            <!-- Se llena dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Formulario de edición (oculto por defecto) -->
+                <div class="edit-form" id="personalEditForm" style="display: none;">
+                    <form id="editPersonalForm">
+                        <div class="form-group">
+                            <label>Nombre Completo</label>
+                            <input type="text" id="editNombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Título</label>
+                            <input type="text" id="editTitulo" name="titulo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="editEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="tel" id="editTelefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Ubicación</label>
+                            <input type="text" id="editUbicacion" name="ubicacion" required>
+                        </div>
+                        <div class="form-group">
+                            <label>LinkedIn</label>
+                            <input type="url" id="editLinkedin" name="linkedin">
+                        </div>
+                        <div class="form-group">
+                            <label>GitHub</label>
+                            <input type="url" id="editGithub" name="github">
+                        </div>
+                        <div class="form-group">
+                            <label>Descripción Profesional</label>
+                            <textarea id="editDescripcion" name="descripcion" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Habilidades Técnicas (separadas por comas)</label>
+                            <input type="text" id="editHabilidadesTecnicas" name="habilidades_tecnicas" placeholder="JavaScript, Node.js, React...">
+                        </div>
+                        <div class="form-group">
+                            <label>Habilidades Blandas (separadas por comas)</label>
+                            <input type="text" id="editHabilidadesBlandas" name="habilidades_blandas" placeholder="Trabajo en equipo, Comunicación...">
+                        </div>
+                        <div class="form-group">
+                            <label>Áreas de Interés (separadas por comas)</label>
+                            <input type="text" id="editAreasInteres" name="areas_interes" placeholder="Desarrollo Web, IA...">
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Guardar Cambios
+                            </button>
+                            <button type="button" class="btn btn-secondary" onclick="cancelEdit('personal')">
+                                <i class="fas fa-times"></i> Cancelar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">
+                Proyectos desarrollados durante mi formación académica que demuestran mis capacidades técnicas y creatividad.
+            </p>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="no-projects">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Cargando proyectos...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia Profesional -->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div id="experienciaContent">
+                <!-- Se llena dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Certificaciones -->
+    <section id="certificaciones" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certificaciones y Reconocimientos</h2>
+            <div id="certificacionesContent">
+                <!-- Se llena dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Curriculum Vitae -->
+    <section id="curriculum" class="curriculum">
+        <div class="container">
+            <h2 class="section-title">Currículum Vitae</h2>
+            <div id="curriculumContent">
+                <!-- Se llena dinámicamente -->
+            </div>
+            <div class="cv-download" id="cvDownload">
+                <!-- Se llena dinámicamente -->
+            </div>
+            <div class="cv-view" id="cvView" style="display: none; margin-top: 2rem;">
+                <iframe id="cvViewer" src="" width="100%" height="600px" style="border: none; border-radius: 8px; box-shadow: var(--shadow);"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Carta de Presentación -->
+    <section id="carta" class="letter">
+        <div class="container">
+            <h2 class="section-title">
+                Carta de Presentación
+                <button class="btn-edit-inline" onclick="editSection('carta')" id="editCartaBtn" style="display: none;">
+                    <i class="fas fa-edit"></i> Editar
+                </button>
+            </h2>
+            <div class="letter-content" id="cartaView">
+                <div id="cartaContent">
+                    <!-- Se llena dinámicamente -->
+                </div>
+            </div>
+            <!-- Formulario de edición de carta (oculto por defecto) -->
+            <div class="edit-form" id="cartaEditForm" style="display: none;">
+                <form id="editCartaForm">
+                    <div class="form-group">
+                        <label>Título</label>
+                        <input type="text" id="editCartaTitulo" name="titulo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contenido</label>
+                        <textarea id="editCartaContenido" name="contenido" rows="15" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Guardar Cambios
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="cancelEdit('carta')">
+                            <i class="fas fa-times"></i> Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p id="footerContact">
+                        <!-- Se llena dinámicamente -->
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <div class="social-links" id="footerSocial">
+                        <!-- Se llena dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/edit.js"></script>
+</body>
+</html>
+

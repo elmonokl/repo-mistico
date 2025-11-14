@@ -1,0 +1,12 @@
+# Habilitar rewrite engine
+RewriteEngine On
+
+# Redirigir a index.php si el archivo no existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Configuración de PHP (ajustar según necesidades)
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+
